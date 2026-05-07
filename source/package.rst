@@ -33,7 +33,7 @@ disse fra et Python-synspunkt.
 Indtil videre er fremgangsmåder til pakke-fremstilling [*en.* build] og
 distribution udeladt. Da vi i organisationen ikke har noget officielt sted at
 lægge færdigbyggede pakker, vi kan hente fra. Da vi anvender
-Python-distributionen MambaForge, er det en mulighed at bygge en pakke i
+Python-distributionen Miniforge, er det en mulighed at bygge en pakke i
 et format, der kan installeres af ``mamba``. Vi beskriver i stedet en
 fremgangsmåde, hvor brugeren installerer pakken lokalt med git og ``pip``.
 
@@ -43,7 +43,7 @@ Det er desuden ikke formålet her at gå i dybden med Pythons metodologi,
 .. Dette kan komme med i en senere version af denne vejledning.
 
 **Det primære fokus her er de standarder, konventioner og værktøjskombinationer,
-der virker godt idag for os i SDFI.**
+der virker godt idag for os.**
 
 
 Informationskilder
@@ -58,7 +58,7 @@ situation, man sidder i.
 
 Følgende er derfor et nedslag i nuværende bedste praksis set fra
 Python-organisationens synsvinkel, herunder standard-værktøjs-udviklere
-(SetupTools, PIP), open-source-organisationer som folkene bag MambaForge, samt
+(SetupTools, PIP), open-source-organisationer som folkene bag Miniforge, samt
 styrelsens og vores egne personlige erfaringer.
 
 Synsvinkel
@@ -75,7 +75,7 @@ Python-specifikke arbejdsgange.
 Fremgangsmåde/checkliste
 ========================
 
-*   Installér nyeste version af Python med MambaForge
+*   Installér nyeste version af Python med Miniforge
 
 *   Hav en fornuftig mappestruktur, der understøtter forskellige processer i
     programellets livscyklus
@@ -459,7 +459,7 @@ pakke-metadata i ``setup.cfg``.
     long_description_content_type = text/markdown; charset=UTF-8
     url = https://github.com/...
     author = Firstname Lastname
-    author_email = firstname.lastname@sdfi.dk
+    author_email = firstname.lastname@kds.dk
     license = MIT
     license_file = LICENSE
     project_urls =

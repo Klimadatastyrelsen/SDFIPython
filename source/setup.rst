@@ -8,9 +8,9 @@ sig at være fordelagtigt at undgå den officielle distribution fra `The Python
 Software Foundation`_ og i stedet bruge en tredjeparts distribution som fx
 `Anaconda`_. Anaconda er et bredt anvendt rammeværk der gør det muligt at
 arbejde med mange forskellige isolerede udviklingsmiljøer. Grundet forskellige
-licensforhold er Anaconda ikke egnet til brug i SDFI, hvorfor vi i stedet
+licensforhold er Anaconda ikke egnet til brug i KDS, hvorfor vi i stedet
 anbefaler at bruge `Mamba`_, der er et frit og åbent alternativ til Anaconda.
-MambaForge er som udgangspunkt sat op til kun at hente pakker fra kanalen
+Miniforge er som udgangspunkt sat op til kun at hente pakker fra kanalen
 ``conda-forge``, som er en organisation af stabile og opdaterede versioner af en
 lang række pakker til en bred modtagergruppe. (Læs mere her: `Why conda-forge?`_.)
 
@@ -40,12 +40,12 @@ Hurtigruten
     valgmuligheder:
 
     *   Installér "just for me"
-    *   Placere filerne under ``C:\Users\<brugernavn>\AppData\Local\mambaforge``
-    *   "Register Mambaforge as my default Python"
-    *   Tilvælg "Add MambaForge to my PATH environment variable"
+    *   Placere filerne under ``C:\Users\<brugernavn>\AppData\Local\miniforge3``
+    *   "Register Miniforge as my default Python"
+    *   Tilvælg "Add Miniforge to my PATH environment variable"
     *   "Clear the package cache upon completion"
 
-Med tilføjelsen af stien til MambaForge til din lokale ``PATH`` miljø-variabel,
+Med tilføjelsen af stien til Miniforge til din lokale ``PATH`` miljø-variabel,
 kan du fremover i en shell-terminal og i dit integrerede udviklingsmiljø bruge
 kommandoen ``mamba`` uden at angive den komplette sti til programmet.
 
@@ -103,8 +103,8 @@ at vi gerne vil kunne tilgå `mamba` fra enhver terminal, herunder
 også i en IDE som VS Code. Sæt derfor følgende og lad resten være
 som det var i udgangspunktet:
 
-* Tilføj MambaForge-stier til din brugers lokale ``PATH``-miljøvariabel
-* Registrér Mambaforge som default Python installation
+* Tilføj Miniforge-stier til din brugers lokale ``PATH``-miljøvariabel
+* Registrér Miniforge som default Python installation
 * Ryd cache efter installation
 
 Miljøvariablen ``PATH`` kan tilpasses senere, hvis det er nødvendigt
@@ -123,8 +123,8 @@ Afvent at installationsprogrammet kører færdig.
 Demonstration
 --------------
 
-Brug af Python via Mambaforge sker som udgangspunkt i den medfølgende
-terminal, der går under navnet "Miniforge Prompt (mambaforge)". Find den
+Brug af Python via Miniforge sker som udgangspunkt i den medfølgende
+terminal, der går under navnet "Miniforge Prompt". Find den
 i Windows' startmenu.
 
 .. figure:: ./images/mamba-install-06.png
@@ -307,7 +307,7 @@ Bemærk at der nu står ``sdfipython`` i parantesen før stien.
 
 .. _setup_edit_path:
 
-Håndtering af MambaForge-stier i din lokale PATH-miljøvariabel
+Håndtering af Miniforge-stier i din lokale PATH-miljøvariabel
 --------------------------------------------------------------
 
 Med installationsvalgene ovenfor får din lokale ``PATH``-miljøvariabel
@@ -365,4 +365,4 @@ miljøvariable på følgende måde:
 .. _`Mamba`: https://mamba.readthedocs.io/en/latest/
 .. _`Mambas officielle dokumentation`: https://mamba.readthedocs.io/en/latest/installation.html
 .. _`Why conda-forge?`: https://conda-forge.org/docs/user/introduction.html#why-conda-forge
-.. _`Mamba installationsprogrammet`: https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-Windows-x86_64.exe
+.. _`Mamba installationsprogrammet`: https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Windows-x86_64.exe
